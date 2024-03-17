@@ -1,24 +1,16 @@
 package com.example.superheroesapp
 
+import android.content.res.Configuration
 import android.os.Bundle
-import android.widget.Space
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardColors
-import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
@@ -78,7 +70,8 @@ fun HeroList(modifier: Modifier = Modifier) {
     }
 }
 
-@Preview(showBackground = true)
+@Preview("LightTheme", showBackground = true)
+@Preview("DarkTheme", uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable
 fun GreetingPreview() {
     SuperHeroesAppTheme {
